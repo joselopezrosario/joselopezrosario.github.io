@@ -313,6 +313,7 @@ Your new `record` type should look like this:
         thumbnail free_to_games.thumbnail%type,
         short_description free_to_games.short_description%type,
         game_url free_to_games.game_url%type,
+        genre free_to_games.genre%type,       
         platform free_to_games.platform%type,
         publisher free_to_games.publisher%type,
         developer free_to_games.developer%type,
