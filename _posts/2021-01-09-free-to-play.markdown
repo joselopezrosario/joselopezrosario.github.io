@@ -259,7 +259,7 @@ After setting your error trap, add a while loop.
     end loop;
 ```
 
-At this point, we want to test parsing one data element. Once we get it working, we can flesh out the section. So, for now, add a `put_line()` that prints the game title. Since the title is text, use the `get_varchar2()`</a> function from the `apex_json` package.
+At this point, we want to test parsing one data element. Once we get it working, we can flesh out the section. So, for now, add a `put_line()` that prints the game title. Since the title is text, use the `get_varchar2()` function from the `apex_json` package.
 
 ```sql
         ...
