@@ -39,7 +39,7 @@ You can do all the work from this tutorial directly in APEX, but I recommend wri
 
 #### REST API Client (Optional)
 
-You should also install a REST API client to help you explore the web API before coding. In this lesson, I use <a href="https://insomnia.rest/download/core" target="_blank">Insonmia Core</a>. You can also use <a href="https://www.postman.com" target="_blank">Postman</a>.
+You should also install a REST API client to help you explore the web API before coding. In this lesson, I use <a href="https://insomnia.rest/download/core" target="_blank">Insomia Core</a>. You can also use <a href="https://www.postman.com" target="_blank">Postman</a>.
 
 ## Exploring the API
 
@@ -301,23 +301,23 @@ column_name schema.table_name.column_name%type
 So for example, to declare game_id, type:
 
 ```sql
-game_id dev.free_to_games.game_id%type,
+game_id free_to_games.game_id%type,
 ```
 
 Your new `record` type should look like this:
 
 ```sql
     type game_record is record(
-        game_id dev.free_to_games.game_id%type,
-        title dev.free_to_games.title%type,
-        thumbnail dev.free_to_games.thumbnail%type,
-        short_description dev.free_to_games.short_description%type,
-        game_url dev.free_to_games.game_url%type,
-        platform dev.free_to_games.platform%type,
-        publisher dev.free_to_games.publisher%type,
-        developer dev.free_to_games.developer%type,
-        release_date dev.free_to_games.release_date%type,
-        freetogame_profile_url dev.free_to_games.freetogame_profile_url%type
+        game_id free_to_games.game_id%type,
+        title free_to_games.title%type,
+        thumbnail free_to_games.thumbnail%type,
+        short_description free_to_games.short_description%type,
+        game_url free_to_games.game_url%type,
+        platform free_to_games.platform%type,
+        publisher free_to_games.publisher%type,
+        developer free_to_games.developer%type,
+        release_date free_to_games.release_date%type,
+        freetogame_profile_url free_to_games.freetogame_profile_url%type
     );
     ...
 ```
@@ -414,7 +414,7 @@ Next, write the `insert` statement.
 
 ```sql
     ...
-    insert into dev.free_to_games
+    insert into free_to_games
     (
         game_id,
         title,
@@ -449,7 +449,7 @@ Run the script.
 If you do not receive any errors, check your table with a select statement.
 
 ```sql
-    select * from dev.free_to_games;
+    select * from free_to_games;
 ```
 
 You should see all the games on the table.
