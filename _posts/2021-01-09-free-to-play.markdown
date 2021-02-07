@@ -325,7 +325,7 @@ Your new `record` type should look like this:
 The next step is to declare a `table` type to hold the collection of records. 
 
 ```sql
-    type games_table is a table of game_record index by simple_integer;
+    type games_table is table of game_record index by simple_integer;
     ...
 ```
 Then declare a variable to hold the table of game records.
