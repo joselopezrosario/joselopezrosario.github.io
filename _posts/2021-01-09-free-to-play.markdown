@@ -31,7 +31,13 @@ To complete this tutorial, you need an Oracle APEX workspace. You can also insta
 
 #### Oracle APEX (Required)
 
-If you do not have an Oracle APEX workspace, <a href="https://www.oracle.com/cloud/free/" target="_blank">sign up for an Always Free account in Oracle Cloud</a> and follow these instructions: <a href="https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/apex-access-admin-services.html#GUID-D078638E-4F59-46CA-A14D-DAEBE1514BE8" target="_blank">Access Oracle Application Express Administration Services</a>
+If you are new to APEX, visit these resources to get a free workspace.
+
+<ul>
+<li><a href="https://apex.oracle.com/en/learn/getting-started/" target="_blank">Getting Started - Oracle APEX</a></li>
+<li><a href="https://www.oracle.com/cloud/free/" target="_blank">Oracle Cloud Free Tier</a></li> 
+<li><a href="https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/apex-access-admin-services.html#GUID-D078638E-4F59-46CA-A14D-DAEBE1514BE8" target="_blank">Access Oracle Application Express Administration Services</a></li>
+</ul>
 
 #### SQL Developer (Optional)
 
@@ -39,7 +45,7 @@ You can do all the work from this tutorial directly in APEX, but I recommend wri
 
 #### REST API Client (Optional)
 
-You should also install a REST API client to help you explore the web API before coding. In this lesson, I use <a href="https://insomnia.rest/download/core" target="_blank">Insomia Core</a>. You can also use <a href="https://www.postman.com" target="_blank">Postman</a>.
+You should also install a REST API client to help you explore the web API before coding. In this lesson, I use <a href="https://insomnia.rest/download/core" target="_blank">Insomnia Core</a>. You can also use <a href="https://www.postman.com" target="_blank">Postman</a>.
 
 ## Exploring the API
 
@@ -415,8 +421,7 @@ Next, write the `insert` statement.
 
 ```sql
     ...
-    insert into free_to_games
-    (
+    insert into free_to_games (
         game_id,
         title,
         thumbnail,

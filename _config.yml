@@ -19,13 +19,13 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Practical Development
-email: joselopezrosario@gmail.com
+email: jose@solutionscay.com
 description: >- # this means to ignore newlines until "baseurl:"
    Lessons and resources for practical developers.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
-github_username:  lopezrosario
+github_username:  solutionscay
 linkedin_username: joselopezrosario
 # Build settings
 theme: minima
